@@ -236,7 +236,8 @@ void AP_EFI::send_mavlink_status(mavlink_channel_t chan)
         0,  // exhaust gas temperature
         0,  // throttle out
         0,  // pressure/temperature compensation
-        0  // ignition voltage (spark supply voltage)
+        0,  // ignition voltage (spark supply voltage)
+        0  // fuel_pressure (Fuel pressure. Zero in this value means "unknown")
         );
 }
 

@@ -1,0 +1,25 @@
+{
+  "name": "auto30",
+  "version": "1.0.0",
+  "description": "build script for auto30",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "~/shells/auto30.sh CUAVv5Nano",
+    "build": "sudo docker run --user $(id -u):$(id -g) -v `pwd`:/ardupilot ardupilot:latest ./waf configure copter --board CUAVv5Nano",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lovecpus/auto30.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lovecpus/auto30/issues"
+  },
+  "homepage": "https://github.com/lovecpus/auto30#readme"
+}
